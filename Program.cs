@@ -21,6 +21,7 @@ client = new Anthropic.AnthropicClient() {
     }.AsIChatClient("claude-haiku-4-5");
 clients.Add("anthropic", client);
 
+
 await using var mcpClient = await McpClient.CreateAsync(new StdioClientTransport(new()
 {
     Name = "MCPServer",
